@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <script src="https://kit.fontawesome.com/1a0b15035f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1> To-Do List</h1>
+  <form id="task-form">
+    <input type="text" style="border: 1px solid #000000; background-color: #b8e8ec;" id="task-input" placeholder="Enter Task">
+    <input style="background-color: #b8e8ec; border: 1px solid #000000;" type="date" id="task-deadline">
+    
+    <select style="border: 1px solid #000000;background-color: #b8e8ec; " id="task-priority">
+        <option value="volvo" selected disabled>Priority</option>
+        <option style="background-color: #73da8d; " value="low">Low</option>
+        <option style="background-color: #f5ee87;" value="medium">Medium</option>
+        <option style="background-color: #b85f5f;" value="high">High</option>
+    </select>
+    <button class="btn" type="submit">Add Task</button>
+  </form>
+
+  <!-- Task list -->
+  <ul style="color: #db4747;" id="task-list"><center>Tasks Dashboard</center></ul>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
